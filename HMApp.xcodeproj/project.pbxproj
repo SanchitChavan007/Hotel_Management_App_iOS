@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB52948D2061E39F00502E00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52948C2061E39F00502E00 /* AppDelegate.swift */; };
+		BB52948F2061E39F00502E00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52948E2061E39F00502E00 /* ViewController.swift */; };
+		BB5294922061E39F00502E00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5294902061E39F00502E00 /* Main.storyboard */; };
+		BB5294952061E39F00502E00 /* HMApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB5294932061E39F00502E00 /* HMApp.xcdatamodeld */; };
+		BB5294972061E39F00502E00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5294962061E39F00502E00 /* Assets.xcassets */; };
+		BB52949A2061E39F00502E00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB5294982061E39F00502E00 /* LaunchScreen.storyboard */; };
+		BB5294A52061E3A000502E00 /* HMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294A42061E3A000502E00 /* HMAppTests.swift */; };
+		BB5294B02061E3A000502E00 /* HMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294AF2061E3A000502E00 /* HMAppUITests.swift */; };
+		BB5294BE2061FC4400502E00 /* CustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294BD2061FC4300502E00 /* CustomerTableViewController.swift */; };
+		BB5294C42061FC9100502E00 /* SearchBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294C32061FC9100502E00 /* SearchBookingViewController.swift */; };
+		BB5294C62061FCA400502E00 /* SearchByNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294C52061FCA400502E00 /* SearchByNameViewController.swift */; };
+		BB5294C82061FCB500502E00 /* SearchByCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294C72061FCB500502E00 /* SearchByCustomerViewController.swift */; };
+		BB5294CA2061FCC900502E00 /* SearchByDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294C92061FCC900502E00 /* SearchByDateViewController.swift */; };
+		BB5294CC2061FCE400502E00 /* SelectDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294CB2061FCE400502E00 /* SelectDatesViewController.swift */; };
+		BB5294CE2061FCF800502E00 /* CreateBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294CD2061FCF800502E00 /* CreateBookingViewController.swift */; };
+		BB5294D02061FD0A00502E00 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294CF2061FD0A00502E00 /* SearchResultViewController.swift */; };
+		BB5294D22061FD8300502E00 /* CreateCustomerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D12061FD8300502E00 /* CreateCustomerViewController.swift */; };
+		BB5294D42061FDA500502E00 /* CreateRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D32061FDA500502E00 /* CreateRoomViewController.swift */; };
+		BB5294DB206201EA00502E00 /* Room+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D5206201EA00502E00 /* Room+CoreDataClass.swift */; };
+		BB5294DC206201EA00502E00 /* Room+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D6206201EA00502E00 /* Room+CoreDataProperties.swift */; };
+		BB5294DD206201EA00502E00 /* Booking+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D7206201EA00502E00 /* Booking+CoreDataClass.swift */; };
+		BB5294DE206201EA00502E00 /* Booking+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D8206201EA00502E00 /* Booking+CoreDataProperties.swift */; };
+		BB5294DF206201EA00502E00 /* Customer+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294D9206201EA00502E00 /* Customer+CoreDataClass.swift */; };
+		BB5294E0206201EA00502E00 /* Customer+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294DA206201EA00502E00 /* Customer+CoreDataProperties.swift */; };
+		BB5294E22062026800502E00 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294E12062026800502E00 /* PersistenceService.swift */; };
+		BB5294E42062033E00502E00 /* GlobalObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294E32062033E00502E00 /* GlobalObjects.swift */; };
+		BB5294E62062246D00502E00 /* CustomerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5294E52062246D00502E00 /* CustomerTableViewCell.swift */; };
+		BB5295252064C4D200502E00 /* CustomerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5295242064C4D200502E00 /* CustomerDetailsViewController.swift */; };
+		BB5295292065190A00502E00 /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5295282065190A00502E00 /* RoomTableViewCell.swift */; };
+		BB52952B2065191800502E00 /* BookingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52952A2065191800502E00 /* BookingTableViewCell.swift */; };
+		BB52952D2065193F00502E00 /* RoomDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52952C2065193F00502E00 /* RoomDetailsViewController.swift */; };
+		BB52952F2065195400502E00 /* BookingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52952E2065195400502E00 /* BookingDetailsViewController.swift */; };
+		BB52953120651D6600502E00 /* RoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52953020651D6600502E00 /* RoomTableViewController.swift */; };
+		BB52953320651D7E00502E00 /* BookingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB52953220651D7E00502E00 /* BookingTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5294A12061E3A000502E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5294812061E39F00502E00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5294882061E39F00502E00;
+			remoteInfo = HMApp;
+		};
+		BB5294AC2061E3A000502E00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5294812061E39F00502E00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5294882061E39F00502E00;
+			remoteInfo = HMApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB5294892061E39F00502E00 /* HMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB52948C2061E39F00502E00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB52948E2061E39F00502E00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BB5294912061E39F00502E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB5294942061E39F00502E00 /* HMApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HMApp.xcdatamodel; sourceTree = "<group>"; };
+		BB5294962061E39F00502E00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB5294992061E39F00502E00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB52949B2061E39F00502E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5294A02061E3A000502E00 /* HMAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5294A42061E3A000502E00 /* HMAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAppTests.swift; sourceTree = "<group>"; };
+		BB5294A62061E3A000502E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5294AB2061E3A000502E00 /* HMAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HMAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5294AF2061E3A000502E00 /* HMAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAppUITests.swift; sourceTree = "<group>"; };
+		BB5294B12061E3A000502E00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB5294BD2061FC4300502E00 /* CustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewController.swift; sourceTree = "<group>"; };
+		BB5294C32061FC9100502E00 /* SearchBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBookingViewController.swift; sourceTree = "<group>"; };
+		BB5294C52061FCA400502E00 /* SearchByNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByNameViewController.swift; sourceTree = "<group>"; };
+		BB5294C72061FCB500502E00 /* SearchByCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByCustomerViewController.swift; sourceTree = "<group>"; };
+		BB5294C92061FCC900502E00 /* SearchByDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByDateViewController.swift; sourceTree = "<group>"; };
+		BB5294CB2061FCE400502E00 /* SelectDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectDatesViewController.swift; sourceTree = "<group>"; };
+		BB5294CD2061FCF800502E00 /* CreateBookingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookingViewController.swift; sourceTree = "<group>"; };
+		BB5294CF2061FD0A00502E00 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		BB5294D12061FD8300502E00 /* CreateCustomerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomerViewController.swift; sourceTree = "<group>"; };
+		BB5294D32061FDA500502E00 /* CreateRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoomViewController.swift; sourceTree = "<group>"; };
+		BB5294D5206201EA00502E00 /* Room+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BB5294D6206201EA00502E00 /* Room+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Room+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB5294D7206201EA00502E00 /* Booking+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Booking+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BB5294D8206201EA00502E00 /* Booking+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Booking+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB5294D9206201EA00502E00 /* Customer+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BB5294DA206201EA00502E00 /* Customer+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customer+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BB5294E12062026800502E00 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		BB5294E32062033E00502E00 /* GlobalObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalObjects.swift; sourceTree = "<group>"; };
+		BB5294E52062246D00502E00 /* CustomerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerTableViewCell.swift; sourceTree = "<group>"; };
+		BB5295242064C4D200502E00 /* CustomerDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerDetailsViewController.swift; sourceTree = "<group>"; };
+		BB5295282065190A00502E00 /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		BB52952A2065191800502E00 /* BookingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewCell.swift; sourceTree = "<group>"; };
+		BB52952C2065193F00502E00 /* RoomDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomDetailsViewController.swift; sourceTree = "<group>"; };
+		BB52952E2065195400502E00 /* BookingDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailsViewController.swift; sourceTree = "<group>"; };
+		BB52953020651D6600502E00 /* RoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewController.swift; sourceTree = "<group>"; };
+		BB52953220651D7E00502E00 /* BookingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5294862061E39F00502E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB52949D2061E3A000502E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5294A82061E3A000502E00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB5294802061E39F00502E00 = {
+			isa = PBXGroup;
+			children = (
+				BB52948B2061E39F00502E00 /* HMApp */,
+				BB5294A32061E3A000502E00 /* HMAppTests */,
+				BB5294AE2061E3A000502E00 /* HMAppUITests */,
+				BB52948A2061E39F00502E00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB52948A2061E39F00502E00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5294892061E39F00502E00 /* HMApp.app */,
+				BB5294A02061E3A000502E00 /* HMAppTests.xctest */,
+				BB5294AB2061E3A000502E00 /* HMAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB52948B2061E39F00502E00 /* HMApp */ = {
+			isa = PBXGroup;
+			children = (
+				BB5294D5206201EA00502E00 /* Room+CoreDataClass.swift */,
+				BB5294D6206201EA00502E00 /* Room+CoreDataProperties.swift */,
+				BB5294D7206201EA00502E00 /* Booking+CoreDataClass.swift */,
+				BB5294D8206201EA00502E00 /* Booking+CoreDataProperties.swift */,
+				BB5294D9206201EA00502E00 /* Customer+CoreDataClass.swift */,
+				BB5294DA206201EA00502E00 /* Customer+CoreDataProperties.swift */,
+				BB52948C2061E39F00502E00 /* AppDelegate.swift */,
+				BB52948E2061E39F00502E00 /* ViewController.swift */,
+				BB5294902061E39F00502E00 /* Main.storyboard */,
+				BB5294962061E39F00502E00 /* Assets.xcassets */,
+				BB5294982061E39F00502E00 /* LaunchScreen.storyboard */,
+				BB52949B2061E39F00502E00 /* Info.plist */,
+				BB5294932061E39F00502E00 /* HMApp.xcdatamodeld */,
+				BB5294BD2061FC4300502E00 /* CustomerTableViewController.swift */,
+				BB5294C32061FC9100502E00 /* SearchBookingViewController.swift */,
+				BB5294C52061FCA400502E00 /* SearchByNameViewController.swift */,
+				BB5294C72061FCB500502E00 /* SearchByCustomerViewController.swift */,
+				BB5294C92061FCC900502E00 /* SearchByDateViewController.swift */,
+				BB5294CB2061FCE400502E00 /* SelectDatesViewController.swift */,
+				BB5294CD2061FCF800502E00 /* CreateBookingViewController.swift */,
+				BB5294CF2061FD0A00502E00 /* SearchResultViewController.swift */,
+				BB5294D12061FD8300502E00 /* CreateCustomerViewController.swift */,
+				BB5294D32061FDA500502E00 /* CreateRoomViewController.swift */,
+				BB5294E12062026800502E00 /* PersistenceService.swift */,
+				BB5294E32062033E00502E00 /* GlobalObjects.swift */,
+				BB5294E52062246D00502E00 /* CustomerTableViewCell.swift */,
+				BB5295242064C4D200502E00 /* CustomerDetailsViewController.swift */,
+				BB52952A2065191800502E00 /* BookingTableViewCell.swift */,
+				BB52952C2065193F00502E00 /* RoomDetailsViewController.swift */,
+				BB5295282065190A00502E00 /* RoomTableViewCell.swift */,
+				BB52952E2065195400502E00 /* BookingDetailsViewController.swift */,
+				BB52953020651D6600502E00 /* RoomTableViewController.swift */,
+				BB52953220651D7E00502E00 /* BookingTableViewController.swift */,
+			);
+			path = HMApp;
+			sourceTree = "<group>";
+		};
+		BB5294A32061E3A000502E00 /* HMAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5294A42061E3A000502E00 /* HMAppTests.swift */,
+				BB5294A62061E3A000502E00 /* Info.plist */,
+			);
+			path = HMAppTests;
+			sourceTree = "<group>";
+		};
+		BB5294AE2061E3A000502E00 /* HMAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5294AF2061E3A000502E00 /* HMAppUITests.swift */,
+				BB5294B12061E3A000502E00 /* Info.plist */,
+			);
+			path = HMAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5294882061E39F00502E00 /* HMApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5294B42061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMApp" */;
+			buildPhases = (
+				BB5294852061E39F00502E00 /* Sources */,
+				BB5294862061E39F00502E00 /* Frameworks */,
+				BB5294872061E39F00502E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HMApp;
+			productName = HMApp;
+			productReference = BB5294892061E39F00502E00 /* HMApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB52949F2061E3A000502E00 /* HMAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5294B72061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMAppTests" */;
+			buildPhases = (
+				BB52949C2061E3A000502E00 /* Sources */,
+				BB52949D2061E3A000502E00 /* Frameworks */,
+				BB52949E2061E3A000502E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5294A22061E3A000502E00 /* PBXTargetDependency */,
+			);
+			name = HMAppTests;
+			productName = HMAppTests;
+			productReference = BB5294A02061E3A000502E00 /* HMAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB5294AA2061E3A000502E00 /* HMAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5294BA2061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMAppUITests" */;
+			buildPhases = (
+				BB5294A72061E3A000502E00 /* Sources */,
+				BB5294A82061E3A000502E00 /* Frameworks */,
+				BB5294A92061E3A000502E00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5294AD2061E3A000502E00 /* PBXTargetDependency */,
+			);
+			name = HMAppUITests;
+			productName = HMAppUITests;
+			productReference = BB5294AB2061E3A000502E00 /* HMAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB5294812061E39F00502E00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Sanchit Chavan";
+				TargetAttributes = {
+					BB5294882061E39F00502E00 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BB52949F2061E3A000502E00 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB5294882061E39F00502E00;
+					};
+					BB5294AA2061E3A000502E00 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BB5294882061E39F00502E00;
+					};
+				};
+			};
+			buildConfigurationList = BB5294842061E39F00502E00 /* Build configuration list for PBXProject "HMApp" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB5294802061E39F00502E00;
+			productRefGroup = BB52948A2061E39F00502E00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5294882061E39F00502E00 /* HMApp */,
+				BB52949F2061E3A000502E00 /* HMAppTests */,
+				BB5294AA2061E3A000502E00 /* HMAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5294872061E39F00502E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB52949A2061E39F00502E00 /* LaunchScreen.storyboard in Resources */,
+				BB5294972061E39F00502E00 /* Assets.xcassets in Resources */,
+				BB5294922061E39F00502E00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB52949E2061E3A000502E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5294A92061E3A000502E00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5294852061E39F00502E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5294C62061FCA400502E00 /* SearchByNameViewController.swift in Sources */,
+				BB5294CC2061FCE400502E00 /* SelectDatesViewController.swift in Sources */,
+				BB5294E22062026800502E00 /* PersistenceService.swift in Sources */,
+				BB5294DE206201EA00502E00 /* Booking+CoreDataProperties.swift in Sources */,
+				BB5294DF206201EA00502E00 /* Customer+CoreDataClass.swift in Sources */,
+				BB5294DB206201EA00502E00 /* Room+CoreDataClass.swift in Sources */,
+				BB5295292065190A00502E00 /* RoomTableViewCell.swift in Sources */,
+				BB5294E42062033E00502E00 /* GlobalObjects.swift in Sources */,
+				BB52953120651D6600502E00 /* RoomTableViewController.swift in Sources */,
+				BB5294D42061FDA500502E00 /* CreateRoomViewController.swift in Sources */,
+				BB52952F2065195400502E00 /* BookingDetailsViewController.swift in Sources */,
+				BB5294CE2061FCF800502E00 /* CreateBookingViewController.swift in Sources */,
+				BB52952D2065193F00502E00 /* RoomDetailsViewController.swift in Sources */,
+				BB5294E62062246D00502E00 /* CustomerTableViewCell.swift in Sources */,
+				BB5294C42061FC9100502E00 /* SearchBookingViewController.swift in Sources */,
+				BB5295252064C4D200502E00 /* CustomerDetailsViewController.swift in Sources */,
+				BB5294CA2061FCC900502E00 /* SearchByDateViewController.swift in Sources */,
+				BB5294E0206201EA00502E00 /* Customer+CoreDataProperties.swift in Sources */,
+				BB52952B2065191800502E00 /* BookingTableViewCell.swift in Sources */,
+				BB5294DD206201EA00502E00 /* Booking+CoreDataClass.swift in Sources */,
+				BB5294952061E39F00502E00 /* HMApp.xcdatamodeld in Sources */,
+				BB5294DC206201EA00502E00 /* Room+CoreDataProperties.swift in Sources */,
+				BB52948F2061E39F00502E00 /* ViewController.swift in Sources */,
+				BB52948D2061E39F00502E00 /* AppDelegate.swift in Sources */,
+				BB5294BE2061FC4400502E00 /* CustomerTableViewController.swift in Sources */,
+				BB5294D02061FD0A00502E00 /* SearchResultViewController.swift in Sources */,
+				BB52953320651D7E00502E00 /* BookingTableViewController.swift in Sources */,
+				BB5294D22061FD8300502E00 /* CreateCustomerViewController.swift in Sources */,
+				BB5294C82061FCB500502E00 /* SearchByCustomerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB52949C2061E3A000502E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5294A52061E3A000502E00 /* HMAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5294A72061E3A000502E00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5294B02061E3A000502E00 /* HMAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5294A22061E3A000502E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5294882061E39F00502E00 /* HMApp */;
+			targetProxy = BB5294A12061E3A000502E00 /* PBXContainerItemProxy */;
+		};
+		BB5294AD2061E3A000502E00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5294882061E39F00502E00 /* HMApp */;
+			targetProxy = BB5294AC2061E3A000502E00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB5294902061E39F00502E00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5294912061E39F00502E00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB5294982061E39F00502E00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5294992061E39F00502E00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5294B22061E3A000502E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB5294B32061E3A000502E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5294B52061E3A000502E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB5294B62061E3A000502E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB5294B82061E3A000502E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HMApp.app/HMApp";
+			};
+			name = Debug;
+		};
+		BB5294B92061E3A000502E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HMApp.app/HMApp";
+			};
+			name = Release;
+		};
+		BB5294BB2061E3A000502E00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HMApp;
+			};
+			name = Debug;
+		};
+		BB5294BC2061E3A000502E00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HMAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.me.xyz.HMAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HMApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5294842061E39F00502E00 /* Build configuration list for PBXProject "HMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5294B22061E3A000502E00 /* Debug */,
+				BB5294B32061E3A000502E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5294B42061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5294B52061E3A000502E00 /* Debug */,
+				BB5294B62061E3A000502E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5294B72061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5294B82061E3A000502E00 /* Debug */,
+				BB5294B92061E3A000502E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5294BA2061E3A000502E00 /* Build configuration list for PBXNativeTarget "HMAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5294BB2061E3A000502E00 /* Debug */,
+				BB5294BC2061E3A000502E00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB5294932061E39F00502E00 /* HMApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB5294942061E39F00502E00 /* HMApp.xcdatamodel */,
+			);
+			currentVersion = BB5294942061E39F00502E00 /* HMApp.xcdatamodel */;
+			path = HMApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB5294812061E39F00502E00 /* Project object */;
+}
